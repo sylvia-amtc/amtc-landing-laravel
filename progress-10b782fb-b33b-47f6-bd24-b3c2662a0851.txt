@@ -11,3 +11,12 @@
 - Files: resources/views/layouts/app.blade.php, resources/views/components/header.blade.php, resources/views/components/footer.blade.php, config/services.php, routes/web.php, tests/Feature/LayoutComponentTest.php
 - **Learnings:** Blade interprets `@context` and `@type` in JSON-LD as directives — must escape with `@@context`/`@@type`. Anonymous components via `<x-header />` work with files in views/components/.
 ---
+
+## 2026-02-17T02:32Z - US-003: Build landing page hero and problem sections
+- Created resources/views/pages/home.blade.php extending layouts.app
+- Ported hero section: badge with pulse animation, h1 with gradient-text, subtitle with pricing, CTA buttons, trust bar
+- Ported problem section: 4 cards (Crushing Costs, Endless Setup, Vendor Chaos, Weather Roulette)
+- Updated routes/web.php to serve pages.home at / with named route 'home'
+- Files: resources/views/pages/home.blade.php, routes/web.php, tests/Feature/HomePageTest.php
+- **Learnings:** Original HTML uses slightly different card titles than story description (Endless Setup vs Slow Setup, Vendor Chaos vs Vendor Lock-in, Weather Roulette vs Limited Reach) - ported exact original content
+---
