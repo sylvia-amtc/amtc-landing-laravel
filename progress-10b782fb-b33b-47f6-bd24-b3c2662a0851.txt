@@ -58,3 +58,23 @@
 - Files: app/Http/Controllers/LeadController.php, routes/web.php, tests/Feature/LeadControllerTest.php
 - **Learnings:** Using postJson() in tests bypasses CSRF for API-style testing on web routes
 ---
+
+## 2026-02-17T03:25Z - US-008: Build lead capture form section on landing page
+- Added #get-started section with lead capture form to home.blade.php
+- Form fields: name, email, company, role (select), interest (select), distribution_points
+- Hidden UTM fields (utm_source, utm_medium, utm_campaign)
+- Added CSRF meta tag to layout
+- Implemented JS in app.js: form submission via fetch to /api/leads, UTM extraction from URL params, success/error message display
+- Files: resources/views/pages/home.blade.php, resources/views/layouts/app.blade.php, resources/js/app.js, tests/Feature/LeadFormTest.php
+- **Learnings:** Laravel 12 web routes include CSRF middleware; form JS needs X-CSRF-TOKEN header from meta tag
+---
+
+## 2026-02-17T03:32Z - US-009: Create privacy policy page
+- Created resources/views/pages/privacy.blade.php extending layouts.app with full GDPR-compliant privacy policy
+- Updated route in web.php to render pages.privacy instead of placeholder
+- Content includes: data controller (Amtecco, VAT BE0748.398.550), data collected, purpose, retention, GDPR rights, cookies, supervisory authority, contact
+- Created PrivacyPageTest.php with 5 tests: status 200, company name, VAT number, GDPR mention, layout check
+- All 62 tests pass, build succeeds
+- Files: resources/views/pages/privacy.blade.php, routes/web.php, tests/Feature/PrivacyPageTest.php
+- **Learnings:** assertSee with HTML tags needs `false` as second param to disable escaping
+---
