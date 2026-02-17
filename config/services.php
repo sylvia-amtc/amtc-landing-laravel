@@ -35,4 +35,16 @@ return [
         ],
     ],
 
+    'gtm' => [
+        'id' => env('GTM_ID'),
+    ],
+
+    'ga4' => [
+        'id' => env('GA4_ID'),
+    ],
+
+    'hotjar' => [
+        'id' => env('HOTJAR_ID'),
+    ],
+
 ];
