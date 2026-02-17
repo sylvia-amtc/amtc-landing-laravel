@@ -98,3 +98,25 @@
 - Files: layouts/blog.blade.php, pages/blog/*.blade.php, routes/web.php, tests/Feature/BlogPostTest.php
 - **Learnings:** Blog routes use explicit per-slug routes (not catch-all) for type safety; assertSee with HTML tags needs `false` as 2nd arg to disable escaping
 ---
+
+## 2026-02-17T04:12Z - US-013: Fix all links and add fade-in JavaScript
+- Fixed broken href="#" on ROI report link → changed to amtecco.com calculator URL
+- Added IntersectionObserver JS for .fade-in elements (adds 'visible' class on scroll)
+- Added smooth scroll JS for all anchor links with mobile menu auto-close
+- Added scroll-behavior: smooth CSS
+- All section IDs verified: #solutions, #compare, #resources, #get-started, #problem, #faq
+- All routes return 200 (home, privacy, terms, 4 blog posts)
+- Mobile menu toggle already working via inline onclick
+- Files: resources/js/app.js, resources/css/app.css, resources/views/pages/home.blade.php, tests/Feature/LinkAndRouteTest.php
+- **Learnings:** Mobile menu uses inline onclick toggle; anchor smooth scroll handled both via CSS and JS for cross-browser support
+---
+
+## 2026-02-17T04:22Z - US-014: End-to-end verification and build
+- Verified all 8 GET routes return 200
+- Verified lead form POST /api/leads works end-to-end with SQLite storage
+- npm run build completes successfully (JS + CSS assets)
+- All 102 tests pass (96 existing + 6 new E2E)
+- Added EndToEndVerificationTest.php with 6 tests: all routes, lead form e2e, validation, viewport meta, build manifest, responsive classes
+- Files: tests/Feature/EndToEndVerificationTest.php
+- **Learnings:** Full app has 10 routes, 102 tests, builds in <1s
+---
