@@ -29,3 +29,23 @@
 - Files: resources/views/pages/home.blade.php, tests/Feature/SolutionsComparisonTest.php
 - **Learnings:** None new - patterns consistent with US-003
 ---
+
+## 2026-02-17T02:52Z - US-005: Build social proof, resources, and FAQ sections
+- Added social proof section with audience types grid and stats (95%, 24h, 99.9%, 200+)
+- Added blockquote testimonial from SRT Alliance Survey
+- Added resources section with id="resources" and 4 blog post links pointing to /blog/* routes
+- Added FAQ section with 3 collapsible questions using <details> elements
+- Added /blog/{slug} route in web.php
+- Created SocialProofResourcesFaqTest.php with 6 tests (home 200, resources id, 4 blog links, social proof content, FAQ content, blog routes 200)
+- All 38 tests pass, build succeeds
+- Files: resources/views/pages/home.blade.php, routes/web.php, tests/Feature/SocialProofResourcesFaqTest.php
+- **Learnings:** Using <details>/<summary> for FAQ avoids JS dependency; blog route uses where() constraint for slug validation
+---
+
+## 2026-02-17T03:02Z - US-006: Create leads migration and model
+- Created migration with all columns: id, name, email, company, role, interest, distribution_points, utm_source, utm_medium, utm_campaign, timestamps
+- Created Lead model with fillable array
+- Only name and email are required; all other fields nullable
+- Files: database/migrations/2026_02_17_030232_create_leads_table.php, app/Models/Lead.php, tests/Feature/LeadModelTest.php
+- **Learnings:** SQLite works out of the box with Laravel's default test config (RefreshDatabase trait)
+---
