@@ -8,7 +8,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/privacy', function () {
-    return view('welcome'); // placeholder
+    return view('pages.privacy');
 })->name('privacy');
 
 Route::get('/terms', function () {
