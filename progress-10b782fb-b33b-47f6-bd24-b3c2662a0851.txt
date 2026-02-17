@@ -87,3 +87,14 @@
 - All 67 tests pass, build succeeds
 - Files: resources/views/pages/terms.blade.php, tests/Feature/TermsPageTest.php, routes/web.php
 ---
+
+## 2026-02-17T03:55Z - US-011: Create blog layout and first two blog posts
+- Created resources/views/layouts/blog.blade.php extending layouts.app with article styling, prose classes, and CTA section
+- Created /blog/satellite-vs-srt-cost (1100+ words on cost comparison)
+- Created /blog/srt-distribution-guide (1200+ words on SRT protocol)
+- Updated routes/web.php with named routes for each blog post
+- Fixed SocialProofResourcesFaqTest to only test implemented blog slugs
+- 8 new tests in BlogPostTest.php (routes, content, CTA, layout, word count)
+- Files: layouts/blog.blade.php, pages/blog/*.blade.php, routes/web.php, tests/Feature/BlogPostTest.php
+- **Learnings:** Blog routes use explicit per-slug routes (not catch-all) for type safety; assertSee with HTML tags needs `false` as 2nd arg to disable escaping
+---
