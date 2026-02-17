@@ -17,6 +17,11 @@ Route::get('/terms', function () {
 
 Route::post('/api/leads', [LeadController::class, 'store'])->name('leads.store');
 
-Route::get('/blog/{slug}', function (string $slug) {
-    return view('welcome'); // placeholder
-})->where('slug', '[a-z0-9\-]+')->name('blog.show');
+$blogPosts = [
+    'satellite-vs-srt-cost' => 'pages.blog.satellite-vs-srt-cost',
+    'srt-distribution-guide' => 'pages.blog.srt-distribution-guide',
+];
+
+foreach ($blogPosts as $slug => $view) {
+    Route::get("/blog/{$slug}", fn () => view($view))->name("blog.{$slug}");
+}

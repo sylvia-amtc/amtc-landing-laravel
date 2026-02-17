@@ -78,3 +78,12 @@
 - Files: resources/views/pages/privacy.blade.php, routes/web.php, tests/Feature/PrivacyPageTest.php
 - **Learnings:** assertSee with HTML tags needs `false` as second param to disable escaping
 ---
+
+## 2026-02-17T03:42Z - US-010: Create terms of service page
+- Created resources/views/pages/terms.blade.php extending layouts.app with full terms content
+- Content includes: company info, service description, acceptable use, IP, liability, termination, Belgian law jurisdiction, contact
+- Updated routes/web.php to point /terms to pages.terms view
+- Created TermsPageTest.php with 5 tests
+- All 67 tests pass, build succeeds
+- Files: resources/views/pages/terms.blade.php, tests/Feature/TermsPageTest.php, routes/web.php
+---

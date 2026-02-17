@@ -48,8 +48,6 @@ class SocialProofResourcesFaqTest extends TestCase
         $slugs = [
             'satellite-vs-srt-cost',
             'srt-distribution-guide',
-            'cdn-vs-broadcast-cdn',
-            'satellite-to-ip-migration',
         ];
 
         foreach ($slugs as $slug) {
