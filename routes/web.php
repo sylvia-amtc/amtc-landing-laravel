@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LeadController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -13,6 +14,8 @@ Route::get('/privacy', function () {
 Route::get('/terms', function () {
     return view('welcome'); // placeholder
 })->name('terms');
+
+Route::post('/api/leads', [LeadController::class, 'store'])->name('leads.store');
 
 Route::get('/blog/{slug}', function (string $slug) {
     return view('welcome'); // placeholder
