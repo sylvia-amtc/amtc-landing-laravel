@@ -299,6 +299,73 @@
   </div>
 </section>
 
+<!-- GET STARTED -->
+<section class="py-20 md:py-28" id="get-started">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-12 fade-in">
+      <h2 class="text-3xl md:text-5xl font-black text-white mb-4">Start Broadcasting in 24 Hours</h2>
+      <p class="text-brand-muted text-lg">Tell us about your distribution needs. We'll have a proposal ready within one business day.</p>
+    </div>
+    <div class="bg-brand-surface border border-brand-border rounded-2xl p-8 md:p-12 glow fade-in">
+      <form id="lead-form" class="space-y-6">
+        <input type="hidden" name="utm_source" id="utm_source">
+        <input type="hidden" name="utm_medium" id="utm_medium">
+        <input type="hidden" name="utm_campaign" id="utm_campaign">
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-brand-muted mb-2">Full Name <span class="text-red-400">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="John Smith" class="w-full bg-brand-bg border border-brand-border rounded-xl px-4 py-3 text-white placeholder-brand-muted/50 focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-brand-muted mb-2">Work Email <span class="text-red-400">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="john@broadcaster.com" class="w-full bg-brand-bg border border-brand-border rounded-xl px-4 py-3 text-white placeholder-brand-muted/50 focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition">
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label for="company" class="block text-sm font-medium text-brand-muted mb-2">Company <span class="text-red-400">*</span></label>
+            <input type="text" id="company" name="company" required placeholder="Acme Broadcasting" class="w-full bg-brand-bg border border-brand-border rounded-xl px-4 py-3 text-white placeholder-brand-muted/50 focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition">
+          </div>
+          <div>
+            <label for="role" class="block text-sm font-medium text-brand-muted mb-2">Role</label>
+            <select id="role" name="role" class="w-full bg-brand-bg border border-brand-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition">
+              <option value="">Select your role</option>
+              <option>CTO</option>
+              <option>VP Engineering</option>
+              <option>VP Operations</option>
+              <option>Head of Distribution</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label for="interest" class="block text-sm font-medium text-brand-muted mb-2">Interest</label>
+            <select id="interest" name="interest" class="w-full bg-brand-bg border border-brand-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition">
+              <option value="">What are you interested in?</option>
+              <option>SRT Distribution</option>
+              <option>Broadcast CDN</option>
+              <option>Both</option>
+            </select>
+          </div>
+          <div>
+            <label for="distribution_points" class="block text-sm font-medium text-brand-muted mb-2">Distribution Points</label>
+            <input type="number" id="distribution_points" name="distribution_points" placeholder="How many destinations?" min="1" class="w-full bg-brand-bg border border-brand-border rounded-xl px-4 py-3 text-white placeholder-brand-muted/50 focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition">
+          </div>
+        </div>
+        <button type="submit" id="submit-btn" class="w-full bg-brand-accent hover:bg-brand-accent2 text-white font-bold py-4 rounded-xl text-lg transition shadow-lg shadow-brand-accent/25 hover:shadow-brand-accent/40">
+          Get Started — It's Free to Talk
+        </button>
+        <div id="form-message" class="hidden text-center py-3 rounded-xl text-sm font-medium"></div>
+      </form>
+      <p class="text-center text-brand-muted text-sm mt-6">
+        Or <a href="#" class="text-brand-accent hover:text-brand-accent2 underline">download our free SRT vs Satellite ROI Report</a>
+      </p>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="py-20 md:py-28" id="faq">
   <div class="max-w-3xl mx-auto px-6">

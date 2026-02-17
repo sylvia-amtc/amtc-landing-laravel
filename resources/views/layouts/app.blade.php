@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'SRT Cloud Distribution & Broadcast CDN | Amtecco')</title>
     <meta name="description" content="@yield('meta_description', 'Replace satellite with cloud SRT distribution. 95% cost savings, 24h setup, unlimited reach. From €129.99/month. Broadcast CDN coming soon.')">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="canonical" href="{{ url()->current() }}">
 
     <!-- Open Graph -->
