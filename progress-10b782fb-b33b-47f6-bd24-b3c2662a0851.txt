@@ -49,3 +49,12 @@
 - Files: database/migrations/2026_02_17_030232_create_leads_table.php, app/Models/Lead.php, tests/Feature/LeadModelTest.php
 - **Learnings:** SQLite works out of the box with Laravel's default test config (RefreshDatabase trait)
 ---
+
+## 2026-02-17T03:12Z - US-007: Build lead capture API endpoint
+- Created LeadController with store method and validation
+- Added POST /api/leads route in web.php (uses CSRF via web middleware)
+- Validation: name required, email required|email, company/role/interest/utm_* optional, distribution_points optional|integer
+- Returns 201 JSON with message and lead data
+- Files: app/Http/Controllers/LeadController.php, routes/web.php, tests/Feature/LeadControllerTest.php
+- **Learnings:** Using postJson() in tests bypasses CSRF for API-style testing on web routes
+---
