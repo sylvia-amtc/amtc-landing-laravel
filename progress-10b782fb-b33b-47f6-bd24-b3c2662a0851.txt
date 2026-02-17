@@ -20,3 +20,12 @@
 - Files: resources/views/pages/home.blade.php, routes/web.php, tests/Feature/HomePageTest.php
 - **Learnings:** Original HTML uses slightly different card titles than story description (Endless Setup vs Slow Setup, Vendor Chaos vs Vendor Lock-in, Weather Roulette vs Limited Reach) - ported exact original content
 ---
+
+## 2026-02-17T02:42Z - US-004: Build landing page solutions and comparison sections
+- Added solutions section (id="solutions") with SRT Distribution and Broadcast CDN cards
+- Added comparison section (id="compare") with satellite vs SRT comparison table (5 providers)
+- Added cross-sell banner between sections
+- All content, pricing, and styling matches original HTML exactly
+- Files: resources/views/pages/home.blade.php, tests/Feature/SolutionsComparisonTest.php
+- **Learnings:** None new - patterns consistent with US-003
+---

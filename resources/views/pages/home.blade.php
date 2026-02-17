@@ -214,4 +214,120 @@
     </div>
   </div>
 </section>
+<!-- SOCIAL PROOF -->
+<section class="py-20 md:py-28 bg-brand-surface/30">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 fade-in">
+      <h2 class="text-3xl md:text-5xl font-black text-white mb-4">Built for broadcasters. By broadcasters.</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 fade-in">
+      <div class="bg-brand-surface border border-brand-border rounded-2xl p-6 text-center card-hover">
+        <div class="text-4xl mb-3">📡</div>
+        <div class="text-white font-semibold">Broadcasters</div>
+      </div>
+      <div class="bg-brand-surface border border-brand-border rounded-2xl p-6 text-center card-hover">
+        <div class="text-4xl mb-3">🛰️</div>
+        <div class="text-white font-semibold">Teleport Operators</div>
+      </div>
+      <div class="bg-brand-surface border border-brand-border rounded-2xl p-6 text-center card-hover">
+        <div class="text-4xl mb-3">📺</div>
+        <div class="text-white font-semibold">OTT Distributors</div>
+      </div>
+      <div class="bg-brand-surface border border-brand-border rounded-2xl p-6 text-center card-hover">
+        <div class="text-4xl mb-3">🔌</div>
+        <div class="text-white font-semibold">Cable Operators</div>
+      </div>
+    </div>
+    <!-- Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 fade-in">
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-black gradient-text">95%</div>
+        <div class="text-brand-muted text-sm mt-1">Less Cost</div>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-black gradient-text">24h</div>
+        <div class="text-brand-muted text-sm mt-1">Setup</div>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-black gradient-text">99.9%</div>
+        <div class="text-brand-muted text-sm mt-1">Uptime</div>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-black gradient-text">200+</div>
+        <div class="text-brand-muted text-sm mt-1">Reach Points</div>
+      </div>
+    </div>
+    <!-- Quote -->
+    <div class="max-w-3xl mx-auto text-center fade-in">
+      <blockquote class="text-xl md:text-2xl text-white/90 italic font-medium leading-relaxed">
+        "SRT adoption reached 77% in broadcast — the industry has chosen."
+      </blockquote>
+      <p class="text-brand-muted text-sm mt-4">— Haivision SRT Alliance Survey, 2024</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="py-20 md:py-28 bg-brand-surface/30" id="resources">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 fade-in">
+      <h2 class="text-3xl md:text-5xl font-black text-white mb-4">Resources for Broadcast Engineers</h2>
+      <p class="text-brand-muted text-lg">Deep dives into SRT, satellite migration, and broadcast CDN technology.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="/blog/satellite-vs-srt-cost" class="bg-brand-surface border border-brand-border rounded-2xl p-6 card-hover group fade-in">
+        <div class="text-xs text-brand-accent font-semibold mb-3">Cost Analysis</div>
+        <h3 class="text-white font-bold mb-3 group-hover:text-brand-accent transition">Satellite vs SRT: Real Cost Comparison for TV Channels</h3>
+        <span class="text-brand-muted text-sm flex items-center gap-1">Read more <span class="group-hover:translate-x-1 transition-transform">→</span></span>
+      </a>
+      <a href="/blog/srt-distribution-guide" class="bg-brand-surface border border-brand-border rounded-2xl p-6 card-hover group fade-in">
+        <div class="text-xs text-brand-accent font-semibold mb-3">Technical Guide</div>
+        <h3 class="text-white font-bold mb-3 group-hover:text-brand-accent transition">SRT Distribution: Complete Guide for Broadcast Engineers</h3>
+        <span class="text-brand-muted text-sm flex items-center gap-1">Read more <span class="group-hover:translate-x-1 transition-transform">→</span></span>
+      </a>
+      <a href="/blog/cdn-vs-broadcast-cdn" class="bg-brand-surface border border-brand-border rounded-2xl p-6 card-hover group fade-in">
+        <div class="text-xs text-brand-accent font-semibold mb-3">Industry Insight</div>
+        <h3 class="text-white font-bold mb-3 group-hover:text-brand-accent transition">Why Traditional CDNs Fail for Professional Live Feeds</h3>
+        <span class="text-brand-muted text-sm flex items-center gap-1">Read more <span class="group-hover:translate-x-1 transition-transform">→</span></span>
+      </a>
+      <a href="/blog/satellite-to-ip-migration" class="bg-brand-surface border border-brand-border rounded-2xl p-6 card-hover group fade-in">
+        <div class="text-xs text-brand-accent font-semibold mb-3">Migration Guide</div>
+        <h3 class="text-white font-bold mb-3 group-hover:text-brand-accent transition">How to Migrate from Satellite to IP in 24 Hours</h3>
+        <span class="text-brand-muted text-sm flex items-center gap-1">Read more <span class="group-hover:translate-x-1 transition-transform">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-20 md:py-28" id="faq">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-16 fade-in">
+      <h2 class="text-3xl md:text-5xl font-black text-white mb-4">Frequently Asked Questions</h2>
+    </div>
+    <div class="space-y-4 fade-in">
+      <details class="bg-brand-surface border border-brand-border rounded-2xl p-6 group">
+        <summary class="text-white font-bold cursor-pointer list-none flex items-center justify-between">
+          How much does SRT distribution cost?
+          <span class="text-brand-muted group-open:rotate-45 transition-transform text-xl">+</span>
+        </summary>
+        <p class="text-brand-muted mt-4">Amtecco SRT Cloud Distribution starts at €129.99 per distribution point per month — up to 95% less than traditional satellite.</p>
+      </details>
+      <details class="bg-brand-surface border border-brand-border rounded-2xl p-6 group">
+        <summary class="text-white font-bold cursor-pointer list-none flex items-center justify-between">
+          How fast can I set up SRT distribution?
+          <span class="text-brand-muted group-open:rotate-45 transition-transform text-xl">+</span>
+        </summary>
+        <p class="text-brand-muted mt-4">Go live in 24 hours. Send us your SRT stream and we handle the rest.</p>
+      </details>
+      <details class="bg-brand-surface border border-brand-border rounded-2xl p-6 group">
+        <summary class="text-white font-bold cursor-pointer list-none flex items-center justify-between">
+          What is SRT?
+          <span class="text-brand-muted group-open:rotate-45 transition-transform text-xl">+</span>
+        </summary>
+        <p class="text-brand-muted mt-4">Secure Reliable Transport (SRT) is an open-source protocol for low-latency video transport over the public internet. It's adopted by 77% of broadcast organizations.</p>
+      </details>
+    </div>
+  </div>
+</section>
 @endsection
