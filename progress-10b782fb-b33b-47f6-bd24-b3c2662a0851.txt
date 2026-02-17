@@ -1,0 +1,13 @@
+
+## 2026-02-17T02:22Z - US-002: Create Blade layout and reusable components (header, footer)
+- Created resources/views/layouts/app.blade.php with Vite assets, meta tags, OG/Twitter cards, Schema.org JSON-LD, conditional analytics (GTM/GA4/Hotjar)
+- Created resources/views/components/header.blade.php with nav (logo, Solutions, Compare, Resources, Get Started CTA, mobile menu)
+- Created resources/views/components/footer.blade.php with company info, links (privacy/terms as named routes), social icons
+- Added analytics config to config/services.php (gtm, ga4, hotjar reading from env)
+- Added placeholder routes for privacy and terms in routes/web.php
+- Created resources/views/test-layout.blade.php for testing layout rendering
+- Created tests/Feature/LayoutComponentTest.php with 10 tests
+- All 18 tests pass, build succeeds, view:cache succeeds
+- Files: resources/views/layouts/app.blade.php, resources/views/components/header.blade.php, resources/views/components/footer.blade.php, config/services.php, routes/web.php, tests/Feature/LayoutComponentTest.php
+- **Learnings:** Blade interprets `@context` and `@type` in JSON-LD as directives — must escape with `@@context`/`@@type`. Anonymous components via `<x-header />` work with files in views/components/.
+---
