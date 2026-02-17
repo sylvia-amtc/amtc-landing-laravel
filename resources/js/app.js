@@ -81,4 +81,43 @@ function initLeadForm() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', initLeadForm);
+// Fade-in IntersectionObserver
+function initFadeIn() {
+    const elements = document.querySelectorAll('.fade-in');
+    if (!elements.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    elements.forEach(el => observer.observe(el));
+}
+
+// Smooth scroll for anchor links
+function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu) mobileMenu.classList.add('hidden');
+            }
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initLeadForm();
+    initFadeIn();
+    initSmoothScroll();
+});

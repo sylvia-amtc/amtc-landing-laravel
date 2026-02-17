@@ -360,7 +360,7 @@
         <div id="form-message" class="hidden text-center py-3 rounded-xl text-sm font-medium"></div>
       </form>
       <p class="text-center text-brand-muted text-sm mt-6">
-        Or <a href="#" class="text-brand-accent hover:text-brand-accent2 underline">download our free SRT vs Satellite ROI Report</a>
+        Or <a href="https://amtecco.com?calculator=true" target="_blank" class="text-brand-accent hover:text-brand-accent2 underline">download our free SRT vs Satellite ROI Report</a>
       </p>
     </div>
   </div>
