@@ -20,6 +20,8 @@ Route::post('/api/leads', [LeadController::class, 'store'])->name('leads.store')
 $blogPosts = [
     'satellite-vs-srt-cost' => 'pages.blog.satellite-vs-srt-cost',
     'srt-distribution-guide' => 'pages.blog.srt-distribution-guide',
+    'cdn-vs-broadcast-cdn' => 'pages.blog.cdn-vs-broadcast-cdn',
+    'satellite-to-ip-migration' => 'pages.blog.satellite-to-ip-migration',
 ];
 
 foreach ($blogPosts as $slug => $view) {
