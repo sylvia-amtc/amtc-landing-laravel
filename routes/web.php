@@ -12,7 +12,7 @@ Route::get('/privacy', function () {
 })->name('privacy');
 
 Route::get('/terms', function () {
-    return view('welcome'); // placeholder
+    return view('pages.terms');
 })->name('terms');
 
 Route::post('/api/leads', [LeadController::class, 'store'])->name('leads.store');
