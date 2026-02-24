@@ -48,9 +48,9 @@ class ViteBuildTest extends TestCase
         $this->assertStringContainsString('--color-brand-bg', $css);
         $this->assertStringContainsString('--color-brand-surface', $css);
         $this->assertStringContainsString('--color-brand-accent', $css);
-        $this->assertStringContainsString('--color-brand-text', $css);
-        $this->assertStringContainsString('--color-brand-muted', $css);
-        $this->assertStringContainsString('#0f1117', $css);
+        $this->assertStringContainsString('--color-text-primary', $css);
+        $this->assertStringContainsString('--color-text-muted', $css);
+        $this->assertStringContainsString('#0F1117', $css);
         $this->assertStringContainsString('#6366f1', $css);
     }
 

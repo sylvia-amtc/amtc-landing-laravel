@@ -8,6 +8,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="canonical" href="{{ url()->current() }}">
 
+    <!-- Font preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- Open Graph -->
     <meta property="og:title" content="@yield('title', 'SRT Cloud Distribution & Broadcast CDN | Amtecco')">
     <meta property="og:description" content="@yield('meta_description', 'Replace satellite with cloud SRT distribution. 95% cost savings, 24h setup, unlimited reach. From €129.99/month.')">
@@ -38,7 +42,7 @@
     <script>(function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:{{ config('services.hotjar.id') }},hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');</script>
     @endif
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/visualizations.js'])
 
     <!-- Schema.org -->
     <script type="application/ld+json">
@@ -55,7 +59,7 @@
     </script>
     @stack('schema')
 </head>
-<body class="bg-brand-bg text-brand-text">
+<body class="bg-brand-bg text-text-primary">
     @if(config('services.gtm.id'))
     <!-- GTM noscript -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ config('services.gtm.id') }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -68,5 +72,19 @@
     </main>
 
     <x-footer />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons({
+            attrs: {
+                width: 20,
+                height: 20,
+                'stroke-width': 1.5
+            }
+        });
+    </script>
+
+    @stack('scripts')
 </body>
 </html>

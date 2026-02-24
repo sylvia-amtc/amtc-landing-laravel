@@ -1,4 +1,5 @@
 import './bootstrap';
+import { initAnimations } from './animations';
 
 // UTM parameter extraction
 function extractUtmParams() {
@@ -57,7 +58,7 @@ function initLeadForm() {
 
             if (response.ok) {
                 messageEl.textContent = result.message || 'Thank you! We\'ll be in touch soon.';
-                messageEl.className = 'text-center py-3 rounded-xl text-sm font-medium bg-brand-green/10 text-brand-green';
+                messageEl.className = 'text-center py-3 rounded-xl text-sm font-medium bg-success/10 text-success';
                 messageEl.classList.remove('hidden');
                 form.reset();
                 extractUtmParams(); // Re-populate UTM after reset
@@ -120,4 +121,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initLeadForm();
     initFadeIn();
     initSmoothScroll();
+    initAnimations();
 });

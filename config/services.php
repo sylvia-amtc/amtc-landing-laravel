@@ -47,4 +47,15 @@ return [
         'id' => env('HOTJAR_ID'),
     ],
 
+    'google' => [
+        'analytics' => [
+            'property_id' => env('GA4_PROPERTY_ID'),
+            'credentials_path' => env('GOOGLE_ANALYTICS_CREDENTIALS', storage_path('app/google-analytics-credentials.json')),
+        ],
+        'search_console' => [
+            'site_url' => env('GSC_SITE_URL', 'https://amtecco.com'),
+            'credentials_path' => env('GOOGLE_SEARCH_CONSOLE_CREDENTIALS', storage_path('app/google-search-console-credentials.json')),
+        ],
+    ],
+
 ];
